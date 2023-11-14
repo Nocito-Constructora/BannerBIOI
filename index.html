@@ -65,6 +65,7 @@
         } else if (state === "UNFOLDED") {
           image.src = folded.src;
           document.getElementById("container").style.height = folded.height;
+          image.onclick = changeHeightBannerAndUrl;
           btn.textContent = "Abrir";
           state = "FOLDED";
         }
